@@ -7,7 +7,7 @@
   },
   "theme": "quill",
   "search": {
-    "location: "top"
+    "location": "top"
   },
   "modeToggle": {
     "default": "dark",
