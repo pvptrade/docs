@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "pvp.trade",
+  "name": "Docs",
   "logo": {
     "dark": "https://pvp.trade/favicon.png",
     "light": "https://pvp.trade/favicon.png"
@@ -13,11 +13,11 @@
   "favicon": "https://pvp.trade/favicon.png",
   "colors": {
     "primary": "#737373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "light": "#737373",
+    "dark": "#737373",
     "anchors": {
-      "from": "#0D9373",
-      "to": "#07C983"
+      "from": "#737373",
+      "to": "#737373"
     }
   },
   "topbarCtaButton": {
