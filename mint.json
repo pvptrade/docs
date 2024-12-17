@@ -11,7 +11,9 @@
     "default": "dark",
     "isHidden": true
   },
-  "background": "grid",
+  "background": {
+    "style": "grid"
+  },
   "favicon": "https://pvp.trade/favicon.png",
   "colors": {
     "primary": "#ffffff",
