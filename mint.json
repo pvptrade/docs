@@ -6,10 +6,12 @@
     "light": "https://pvp.trade/favicon.png"
   },
   "theme": "quill",
+  "search": "top",
   "modeToggle": {
     "default": "dark",
     "isHidden": true
   },
+  "background": "grid",
   "favicon": "https://pvp.trade/favicon.png",
   "colors": {
     "primary": "#ffffff",
