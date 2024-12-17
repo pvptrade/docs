@@ -2,10 +2,166 @@
 title: 'Commands'
 icon: "circle-info"
 iconType: "solid"
+description: "Documentation for all PVP commands"
 ---
 
-The PVP points program began on July 27, 2024. Points are distributed each week on Saturdays based on activity and referrals. Users earn 1 point for every 5 points their referred users earn.
+**/start**
 
-There is a total supply of 1,000,000 points. The number of points distributed each week scales with total user activity. As of December 14, 2024, 443,057 points have been distributed.
+View your wallet balances, addresses, and a short onboarding guide.
 
-PVP reserves the right to modify previous point distributions under its sole discretion.
+**/markets**
+
+View all tradeable perp markets. You can also paginate through the markets with the left and arrows.
+
+**/long and /short**
+
+Long or short a token. Once you enter /long or /short, you will be prompted for the ticker, the leverage, and margin you want to use.
+
+You can also use the following shorthand syntax: `/long <ticker> <leverage> <margin>`.
+
+**/close <ticker> <percentage>**
+
+Close an open position. Once you enter /close, you will be prompted to enter the ticker you’d like to close, and then the percentage of the token you want to close.
+
+You can also use the following shorthand syntax:
+
+- `/close BTC 100%` — closes 100% of your BTC position.
+- `/close all 30%` — close 30% of all open positions.
+
+**/positions**
+
+View your open positions. You can also call `/positions @username` to view the positions of someone else in the group chat.
+
+**/leaderboards**
+
+View the leaderboards in the current group chat. Only users with more than $10 in equity or pnl are shown.
+
+You can also specify one of the following timeframes: `week` (for the current week), `1d` (default), `7d`, `30d`, or `all`.
+
+**/chart or /c**
+
+Use e.g. `/chart BTC` to show the 1h BTC chart. Charts also display group members’ fills.
+
+You can also specify one of the following timeframes: `1m`, `5m`, `15m`, `1h`, `4h`, `1d`.
+
+**/pnl**
+
+View your PnL chart. You can call `/pnl @username` to view the PnL chart of someone else in the group chat.
+
+You can also specify one of the following timeframes: `1d`, `7d`, `30d`, `all`.
+
+**/balances**
+
+View your spot balances. You cannot call this command on another user.
+
+**/clan and /clankick**
+
+Manage your current clan and kick members from your clan (if you are a clan owner)
+
+**/clanleaderboards**
+
+View the top 5 and bottom 5 clans by PnL for the current week (starts and ends every Saturday), as well as your position.
+
+You cannot specify other timeframes for this command.
+
+**/buy and /sell**
+
+Buy and sell spot tokens. You must have USDC in your spot account to buy spot tokens. You can transfer USDC from your perps to spot account using the `/transfer` command if you are using a PVP-managed wallet.
+
+**/pair**
+
+How to open a pair trade:
+
+`/pair [ticker-to-long] [leverage] [margin] [ticker-to-short] [leverage] [margin]`
+
+Example: To long BTC at 10x leverage with $1,000 of margin while shorting ETH at 10x leverage with $2,000 of margin:
+
+`/pair btc 10x 1000 eth 10x 2000`
+
+![soldier.png](Commands%20159946ec1b3c8013b733e01fc3bf85db/soldier.png)
+
+**/limit**
+
+How to place a limit order:
+
+Limit long: `/limit [long] [ticker] [leverage] [price] [margin]`
+
+Limit short: `/limit [short] [ticker] [leverage] [price] [margin]`
+
+You may also type /limit and enter each step individually while getting acquainted with the syntax.
+
+Example: to place a Limit Order Long for HYPE at 3x leverage with $1,000 of margin at $15, type:
+
+`/limit long hype 3x 15 1000`
+
+![soldier2.png](Commands%20159946ec1b3c8013b733e01fc3bf85db/soldier2.png)
+
+**/stoploss, /takeprofit, and /stoplimit**
+
+Use these commands to set stop losses, take profits, or stop limits on your positions.
+
+**/presets**
+
+Presets allow you to execute trades for an asset with predefined leverage, TP/SL params all in one click. To create or view existing presets use /presets. To execute a preset order, invoke it like so: `/preset <index>`.
+
+**/invite**
+
+Gets your referral code, as well as the number of people you have referred.
+
+**/price**
+
+Use e.g. `/price BTC` to get the current price of BTC.
+
+/**hype**
+
+Gets the current price of HYPE.
+
+**/alert**
+
+Use e.g. `/alert HYPE $20` to get a price alert when HYPE hits $20.
+
+**/points**
+
+See how many points you earned. See the Points section for more details.
+
+**/track, /untrack and /watchlist**
+
+Use these commands to manage tracking a wallet address’ trades on Hyperliquid. Certain addresses, like the HLP, cannot be tracked.
+
+**/wallet**
+
+View your wallet addresses and balances.
+
+**/send**
+
+Use `/send @username $10` to send someone in your group chat USDC. You must have a PVP-managed wallet to do so, and the minimum you can send is 5 USDC.
+
+You can also use the following aliases: `/heal`, `/tip`, `/revive`,
+
+**/withdraw**
+
+Withdraw to another address on the Hyperliquid L1. You must have a PVP-managed wallet to withdraw funds.
+
+**/transfer**
+
+Transfer USDC between your spot and perps accounts. You must have a PVP-managed wallet to transfer.
+
+**/accounts**
+
+Manage your accounts (wallets). You can add a new account (either PVP-managed or via API key) and set your primary account, which is the account that is used across your group chats.
+
+**/taunt**
+
+Taunt another clan with a message. You will be prompted to to enter their clan name and a taunt, which can be text or a sticker.
+
+**/orders**
+
+View your open orders and cancel them.
+
+**/stats**
+
+View your trading stats such as volume, trades made, and number of people invited.
+
+**/settings**
+
+Open up the settings menu, where you can manage your bot settings, manage your clan, export your private keys, or contact support.
