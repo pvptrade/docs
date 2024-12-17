@@ -16,7 +16,7 @@
   "background": {
     "style": "grid"
   },
-  "favicon": "https://pvp.trade/icon.svg",
+  "favicon": "/images/icon.svg",
   "colors": {
     "primary": "#ffffff",
     "light": "#ffffff",
