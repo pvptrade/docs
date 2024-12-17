@@ -12,12 +12,12 @@
   },
   "favicon": "https://pvp.trade/favicon.png",
   "colors": {
-    "primary": "#737373",
-    "light": "#737373",
-    "dark": "#737373",
+    "primary": "#ffffff",
+    "light": "#ffffff",
+    "dark": "#ffffff",
     "anchors": {
-      "from": "#737373",
-      "to": "#737373"
+      "from": "#ffffff",
+      "to": "#ffffff"
     }
   },
   "topbarCtaButton": {
