@@ -1,11 +1,36 @@
 ---
-title: 'Commands'
-icon: "coin"
+title: 'FAQ'
+icon: "block-question"
 iconType: "solid"
+description: "Frequently Asked Questions"
 ---
 
-The PVP points program began on July 27, 2024. Points are distributed each week on Saturdays based on activity and referrals. Users earn 1 point for every 5 points their referred users earn.
+**Where are private keys stored?**
 
-There is a total supply of 1,000,000 points. The number of points distributed each week scales with total user activity. As of December 14, 2024, 443,057 points have been distributed.
+Private keys are stored and encrypted at rest using AWS Key Management Service. In 2025 Q1, we will be migrating to Turnkey, which was founded by the team that built Coinbase Custody. Once migrated, only you will have access to your private key.
 
-PVP reserves the right to modify previous point distributions under its sole discretion.
+**How do I withdraw funds from PVP?**
+
+You can always export your private key in `/settings`.
+
+You can also withdraw to another wallet you own on the Hyperliquid L1 using the `/withdraw` command. Once withdrawn, you can go to [https://app.hyperliquid.xyz/portfolio](https://app.hyperliquid.xyz/portfolio) and connect with the wallet you withdrew to. Then, you can withdraw USDC from the Hyperliquid L1 to Arbitrum using the Hyperliquid UI.
+
+**How can I connect my existing Hyperliquid account to PVP?**
+
+Use the `/accounts` command, and then you can attach your existing Hyperliquid account by pressing “Add New Hyperliquid Account”. You’ll then be prompted to enter your wallet address and to generate an API key, which we’ll use to authenticate your account.
+
+**What fees are collected on trades by PVP?**
+
+There is a 0.05% on futures trades, and a 0.5% fee on spot trades. There is no fee on bridging or liquidations.
+
+**Why haven’t my bridged funds come through yet?**
+
+There is a minimum deposit limit of 10 USDC to initiate the bridging process. If you’ve deposited at least 10 USDC and have not received it on PVP yet, run any command to initiate the bridging process.
+
+**I accidentally sent SOL / ETH / USDT / etc to my wallet instead of USDC. How can I recover it?**
+
+If you’ve sent a non-USDC asset to either your EVM or Solana wallet, run `/settings` to export your EVM private key (Export private key) or your Solana private key (Export Solana key). Then, you can import it to a wallet of your choice to recover your funds.
+
+**Any trading tips?**
+
+Don’t get liquidated.

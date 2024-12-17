@@ -2,11 +2,13 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "pvp.trade",
   "logo": {
-    "dark": "https://pvp.trade/favicon.png",
-    "light": "https://pvp.trade/favicon.png"
+    "dark": "https://pvp.trade/icon.svg",
+    "light": "https://pvp.trade/icon.svg"
   },
   "theme": "quill",
-  "search": "top",
+  "search": {
+    "location": "top"
+  },
   "modeToggle": {
     "default": "dark",
     "isHidden": true
@@ -14,7 +16,7 @@
   "background": {
     "style": "grid"
   },
-  "favicon": "https://pvp.trade/favicon.png",
+  "favicon": "/images/icon.svg",
   "colors": {
     "primary": "#ffffff",
     "light": "#ffffff",
