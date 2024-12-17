@@ -27,11 +27,12 @@
   "anchors": [],
   "navigation": [
     {
-      "group": "Quickstart",
+      "group": "Documentation",
       "pages": [
-        "introduction",
         "quickstart",
-        "development"
+        "commands",
+        "points",
+        "faq"
       ]
     }
   ],
