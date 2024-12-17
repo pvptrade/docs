@@ -5,6 +5,7 @@
     "dark": "https://pvp.trade/favicon.png",
     "light": "https://pvp.trade/favicon.png"
   },
+  "theme": "quill",
   "modeToggle": {
     "default": "dark",
     "isHidden": true
