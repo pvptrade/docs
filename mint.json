@@ -6,7 +6,9 @@
     "light": "https://pvp.trade/favicon.png"
   },
   "theme": "quill",
-  "search": "top",
+  "search": {
+    "location: "top"
+  },
   "modeToggle": {
     "default": "dark",
     "isHidden": true
