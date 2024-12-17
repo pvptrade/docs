@@ -2,15 +2,15 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "pvp.trade",
   "logo": {
-    "dark": "/favicon.png",
-    "light": "/favicon.png"
+    "dark": "https://pvp.trade/favicon.png",
+    "light": "https://pvp.trade/favicon.png"
   },
   "theme": "quill",
   "modeToggle": {
     "default": "dark",
     "isHidden": true
   },
-  "favicon": "/favicon.png",
+  "favicon": "https://pvp.trade/favicon.png",
   "colors": {
     "primary": "#ffffff",
     "light": "#ffffff",
