@@ -9,7 +9,6 @@
     "default": "dark",
     "isHidden": true
   },
-  "theme": "quill",
   "favicon": "https://pvp.trade/favicon.png",
   "colors": {
     "primary": "#737373",
