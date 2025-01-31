@@ -1,0 +1,19 @@
+---
+title: 'Security'
+icon: "lock"
+iconType: "solid"
+---
+
+### How are private keys stored?
+
+We do not custody your private keys. All private keys are custodied and secured by [Turnkey](https://www.turnkey.com/), which was built by the team that built Coinbase's Custody product, which secures over $100B in value.
+
+When you create a wallet on PVP, Turnkey creates a wallet for you in a secure enclave, and approves PVP to trade on your behalf using Hyperliquid's agent wallet API.
+
+### How can I enable biometric passkeys?
+
+You can prevent an attacker from withdrawing or transferring funds from your PVP wallet by enabling 2FA biometric passkeys. Run the `/security` command, and you will be prompted to set a biometric passkey.
+
+Your biometric passkey is a unique key that is generated and stored securely on your device, and typically synced to your platform's keychain (e.g. Apple, Google, Microsoft). If you lose access to your passkey, you will permanently lose access to your wallet and all assets within it.
+
+Once biometric 2FA is enabled, when withdrawing funds or exporting your private key, you will need to authenticate with your passkey. Note that this only applies per account, so you must set multiple passkeys if you want to secure multiple PVP accounts.
