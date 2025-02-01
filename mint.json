@@ -110,8 +110,7 @@
   "versions": [
   {
     "name": "en",
-    "locale": "en",
-    "default": true
+    "locale": "en"
   },
   {
     "name": "cn",
