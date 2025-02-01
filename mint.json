@@ -36,20 +36,28 @@
     {
       "group": "Documentation",
       "pages": [
-        "en-quickstart",
-        "en-commands",
-        "en-points",
-        "en-faq"
+        {"name": "quickstart",
+        "file" : "en-quickstart"},
+        {"name": "Commands",
+        "file" : "en-commands"},
+        {"name": "Points",
+        "file" : "en-points"},
+        {"name": "FAQ",
+        "file" : "en-faq"}
       ],
       "version": "en"
     },
     {
       "group": "cn-Documentation",
       "pages": [
-        "cn-quickstart",
-        "cn-commands",
-        "cn-points",
-        "cn-faq"
+        {"name" : "开始使用"
+         "file" : "cn-quickstart"},
+        {"name" : "命令"
+         "file" : "cn-commands"},
+        {"name" : "积分"
+         "file" : "cn-points"},
+        {"name" : "FAQ"
+         "file" : "cn-faq"},
       ],
       "version": "cn"
     },
