@@ -81,31 +81,4 @@
     "name": "es",
   }
   ]
-  "versions": [
-  {
-    "name": "en",
-    "locale": "en",
-  },
-  {
-    "name": "cn",
-    "locale": "cn",
-  },
-  {
-    "name": "jp",
-    "locale": "jp"
-  }
-  {
-    "name": "kr",
-    "locale": "kr"
-  }
-  {
-    "name": "ru",
-    "locale": "ru"
-  }
-  {
-    "name": "es",
-    "locale": "es"
-  }
-  ]
-
 }
