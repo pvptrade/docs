@@ -92,7 +92,7 @@
         "tr-faq"
       ],
       "version": "tr"
-    } 
+    }, 
     {
       "group": "es-Documentation",
       "pages": [
@@ -110,7 +110,8 @@
   "versions": [
   {
     "name": "en",
-    "locale": "en"
+    "locale": "en",
+    "default": true
   },
   {
     "name": "cn",
