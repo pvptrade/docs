@@ -39,9 +39,9 @@
         "en-quickstart",
         "en-commands",
         "en-points",
-        "en-faq",
-      ]
-      "version": "en",
+        "en-faq"
+      ],
+      "version": "en"
     },
     {
       "group": "cn-Documentation",
@@ -49,8 +49,8 @@
         "cn-quickstart",
         "cn-commands",
         "cn-points",
-        "cn-faq",
-      ]
+        "cn-faq"
+      ],
       "version": "cn"
     }
   ],
