@@ -52,7 +52,57 @@
         "cn-faq"
       ],
       "version": "cn"
-    }
+    },
+    {
+      "group": "jp-Documentation",
+      "pages": [
+        "jp-quickstart",
+        "jp-commands",
+        "jp-points",
+        "jp-faq"
+      ],
+      "version": "jp"
+    },
+    {
+      "group": "kr-Documentation",
+      "pages": [
+        "kr-quickstart",
+        "kr-commands",
+        "kr-points",
+        "kr-faq"
+      ],
+      "version": "kr"
+    },
+    {
+      "group": "ru-Documentation",
+      "pages": [
+        "ru-quickstart",
+        "ru-commands",
+        "ru-points",
+        "ru-faq"
+      ],
+      "version": "ru"
+    },
+    {
+      "group": "tr-Documentation",
+      "pages": [
+        "tr-quickstart",
+        "tr-commands",
+        "tr-points",
+        "tr-faq"
+      ],
+      "version": "tr"
+    } 
+    {
+      "group": "es-Documentation",
+      "pages": [
+        "es-quickstart",
+        "es-commands",
+        "es-points",
+        "es-faq"
+      ],
+      "version": "es"
+    }  
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
@@ -60,25 +110,32 @@
   "versions": [
   {
     "name": "en",
+    "locale": "en",
     "default": true
   },
   {
-    "name": "cn"
+    "name": "cn",
+    "locale": "cn"
   },
   {
-    "name": "jp"
+    "name": "jp",
+    "locale": "jp"
   },
   {
-    "name": "kr"
+    "name": "kr",
+    "locale": "kr"
   },
   {
-    "name": "ru"
+    "name": "ru",
+    "locale": "ru"
   },
   {
-    "name": "tr"
+    "name": "tr",
+    "locale": "tr"
   },
   {
-    "name": "es"
+    "name": "es",
+    "locale": "es"
   }
   ]
 }
