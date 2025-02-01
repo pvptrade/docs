@@ -50,14 +50,14 @@
     {
       "group": "PVP 文档",
       "pages": [
-        {"name" : "开始使用",
-         "file" : "cn-quickstart"},
-        {"name" : "命令",
-         "file" : "cn-commands"},
-        {"name" : "积分",
-         "file" : "cn-points"},
-        {"name" : "FAQ",
-         "file" : "cn-faq"}
+        {"name":"开始使用",
+         "file":"cn-quickstart"},
+        {"name":"命令",
+         "file":"cn-commands"},
+        {"name":"积分",
+         "file":"cn-points"},
+        {"name":"FAQ",
+         "file":"cn-faq"}
       ],
       "version": "cn"
     },
