@@ -18,7 +18,7 @@
   },
   "favicon": "/images/icon.svg",
   "colors": {
-    "primary": "#000000",
+    "primary": "#ffffff",
     "light": "#ffffff",
     "dark": "#ffffff",
     "anchors": {
@@ -26,21 +26,86 @@
       "to": "#ffffff"
     }
   },
+  "topbarCtaButton": {
+    "name": "Use pvp.trade",
+    "url": "https://t.me/pvptrade_bot"
+  },
   "tabs": [],
   "anchors": [],
   "navigation": [
     {
       "group": "Documentation",
       "pages": [
-        "quickstart",
-        "commands",
-        "points",
-        "security",
-        "faq"
+        "en-quickstart",
+        "en-commands",
+        "en-points",
+        "en-faq",
       ]
+      "version": "en",
+    }
+    {
+      "group": "cn-Documentation",
+      "pages": [
+        "cn-quickstart",
+        "cn-commands",
+        "cn-points",
+        "cn-faq",
+      ]
+      "version": "cn"
     }
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
+  },
+  "versions": [
+  {
+    "name": "en",
+    "default": true
   }
+  {
+    "name": "cn",
+  }
+  {
+    "name": "jp",
+  }
+  {
+    "name": "kr",
+  }
+  {
+    "name": "ru",
+  }
+  {
+    "name": "tr",
+  }
+  {
+    "name": "es",
+  }
+  ]
+  "versions": [
+  {
+    "name": "en",
+    "locale": "en",
+  },
+  {
+    "name": "cn",
+    "locale": "cn",
+  },
+  {
+    "name": "jp",
+    "locale": "jp"
+  }
+  {
+    "name": "kr",
+    "locale": "kr"
+  }
+  {
+    "name": "ru",
+    "locale": "ru"
+  }
+  {
+    "name": "es",
+    "locale": "es"
+  }
+  ]
+
 }

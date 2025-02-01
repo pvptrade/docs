@@ -1,0 +1,163 @@
+---
+title: 'Komutlar'
+icon: "circle-info"
+iconType: "solid"
+description: "Tüm PVP Komutları için Dokümantasyon"
+---
+
+### /start
+
+Cüzdan bakiyelerinizi, adreslerinizi ve kısa bir başlangıç kılavuzunu görüntüleyin.
+
+### /markets
+
+Tüm işlem yapılabilir vadeli piyasaları görüntüleyin. Sol ve sağ oklarla piyasalar arasında gezinebilirsiniz.
+
+### /long ve /short
+
+Bir token için long veya short pozisyon alın. /long veya /short girdiğinizde, sembol, kaldıraç ve kullanmak istediğiniz teminat için yönlendirileceksiniz.
+
+Ayrıca şu kısa sözdizimini kullanabilirsiniz: **`/long <sembol> <kaldıraç> <teminat>`**.
+
+### /close <sembol> <yüzde>
+
+Açık pozisyonu kapatın. /close girdiğinizde, kapatmak istediğiniz sembolü ve ardından kapatmak istediğiniz token yüzdesini girmeniz istenecektir.
+
+Ayrıca şu kısa sözdizimini kullanabilirsiniz:
+
+- **`/close BTC 100%`** — BTC pozisyonunuzun %100'ünü kapatır.
+- **`/close all 30%`** — tüm açık pozisyonların %30'unu kapatır.
+
+### /positions
+
+Açık pozisyonlarınızı görüntüleyin. Grup sohbetindeki başka birinin pozisyonlarını görmek için **`/positions @kullanıcıadı`** komutunu da kullanabilirsiniz.
+
+### /leaderboards
+
+Mevcut grup sohbetindeki sıralamaları görüntüleyin. Sadece $10'dan fazla sermayesi veya kâr/zararı olan kullanıcılar gösterilir.
+
+Ayrıca şu zaman dilimlerinden birini belirtebilirsiniz: **`week`** (mevcut hafta için), **`1d`** (varsayılan), **`7d`**, **`30d`** veya **`all`**.
+
+### /chart veya /c
+
+Örneğin 1 saatlik BTC grafiğini göstermek için **`/chart BTC`** kullanın. Grafikler ayrıca grup üyelerinin işlemlerini gösterir.
+
+Ayrıca şu zaman dilimlerinden birini belirtebilirsiniz: **`1m`**, **`5m`**, **`15m`**, **`1h`**, **`4h`**, **`1d`**.
+
+### /pnl
+
+Kâr/Zarar grafiğinizi görüntüleyin. Grup sohbetindeki başka birinin Kâr/Zarar grafiğini görmek için **`/pnl @kullanıcıadı`** komutunu kullanabilirsiniz.
+
+Ayrıca şu zaman dilimlerinden birini belirtebilirsiniz: **`1d`**, **`7d`**, **`30d`**, **`all`**.
+
+### /balances
+
+Spot bakiyelerinizi görüntüleyin. Bu komutu başka bir kullanıcı için kullanamazsınız.
+
+### /clan ve /clankick
+
+Mevcut klanınızı yönetin ve klanınızdan üyeleri atın (klan sahibiyseniz)
+
+### /clanleaderboards
+
+Mevcut hafta için (her Cumartesi başlar ve biter) Kâr/Zarar bazında en iyi 5 ve en kötü 5 klanı ve sizin pozisyonunuzu görüntüleyin.
+
+Bu komut için başka zaman dilimleri belirtemezsiniz.
+
+### /buy ve /sell
+
+Spot token alıp satın. Spot token satın almak için spot hesabınızda USDC olması gerekir. PVP tarafından yönetilen bir cüzdan kullanıyorsanız, **`/transfer`** komutuyla vadeli işlemler hesabınızdan spot hesabınıza USDC transfer edebilirsiniz.
+
+### /pair
+
+İkili işlem nasıl açılır:
+
+**`/pair [long-alınacak-sembol] [kaldıraç] [teminat] [short-alınacak-sembol] [kaldıraç] [teminat]`**
+
+Örnek: $1,000 teminatla 10x kaldıraçlı BTC long pozisyonu açarken aynı anda $2,000 teminatla 10x kaldıraçlı ETH short pozisyonu açmak için:
+
+**`/pair btc 10x 1000 eth 10x 2000`**
+
+### /limit
+
+Limit emir nasıl verilir:
+
+Limit long: **`/limit [long] [sembol] [kaldıraç] [fiyat] [teminat]`**
+
+Limit short: **`/limit [short] [sembol] [kaldıraç] [fiyat] [teminat]`**
+
+Sözdizimi ile tanışırken /limit yazıp her adımı tek tek de girebilirsiniz.
+
+Örnek: HYPE için $15 fiyattan 3x kaldıraç ve $1,000 teminatla Limit Long emri vermek için:
+
+**`/limit long hype 3x 15 1000`**
+
+### /stoploss, /takeprofit ve /stoplimit
+
+Pozisyonlarınız için stop loss, take profit veya stop limit emirleri vermek için bu komutları kullanın.
+
+### /presets
+
+Hazır ayarlar, önceden tanımlanmış kaldıraç, TP/SL parametreleri ile tek tıkla işlem yapmanızı sağlar. Hazır ayar oluşturmak veya mevcut hazır ayarları görüntülemek için /presets kullanın. Hazır ayar emrini çalıştırmak için şöyle yazın: **`/preset <indeks>`**.
+
+### /invite
+
+Referans kodunuzu ve kaç kişiyi davet ettiğinizi görün.
+
+### /price
+
+Örneğin BTC'nin mevcut fiyatını öğrenmek için **`/price BTC`** kullanın.
+
+### /hype
+
+HYPE'ın mevcut fiyatını öğrenin.
+
+### /alert
+
+Örneğin HYPE $20'a ulaştığında fiyat alarmı almak için **`/alert HYPE $20`** kullanın.
+
+### /points
+
+Kazandığınız puanları görün. Daha fazla detay için Puanlar bölümüne bakın.
+
+### /track, /untrack ve /watchlist
+
+Bu komutları Hyperliquid üzerindeki bir cüzdan adresinin işlemlerini takip etmek için kullanın. HLP gibi bazı adresler takip edilemez.
+
+### /wallet
+
+Cüzdan adreslerinizi ve bakiyelerinizi görüntüleyin.
+
+### /send
+
+Grup sohbetinizdeki birine USDC göndermek için **`/send @kullanıcıadı $10`** kullanın. Bunu yapmak için PVP tarafından yönetilen bir cüzdanınız olması gerekir ve gönderebileceğiniz minimum miktar 5 USDC'dir.
+
+Ayrıca şu alternatif komutları da kullanabilirsiniz: **`/heal`**, **`/tip`**, **`/revive`**
+
+### /withdraw
+
+Hyperliquid L1'deki başka bir adrese para çekin. Para çekmek için PVP tarafından yönetilen bir cüzdanınız olması gerekir.
+
+### /transfer
+
+Spot ve vadeli işlemler hesaplarınız arasında USDC transfer edin. Transfer yapmak için PVP tarafından yönetilen bir cüzdanınız olması gerekir.
+
+### /accounts
+
+Hesaplarınızı (cüzdanlarınızı) yönetin. Yeni hesap ekleyebilir (PVP tarafından yönetilen veya API anahtarı ile) ve tüm grup sohbetlerinizde kullanılan ana hesabınızı ayarlayabilirsiniz.
+
+### /taunt
+
+Başka bir klana mesajla meydan okuyun. Klan adlarını ve metin veya çıkartma olabilecek meydan okuma mesajını girmeniz istenecektir.
+
+### /orders
+
+Açık emirlerinizi görüntüleyin ve iptal edin.
+
+### /stats
+
+İşlem hacmi, yapılan işlemler ve davet edilen kişi sayısı gibi işlem istatistiklerinizi görüntüleyin.
+
+### /settings
+
+Bot ayarlarınızı yönetebileceğiniz, klanınızı yönetebileceğiniz, özel anahtarlarınızı dışa aktarabileceğiniz veya destekle iletişime geçebileceğiniz ayarlar menüsünü açın.

@@ -1,0 +1,27 @@
+---
+title: 'FAQ'
+icon: "block-question"
+iconType: "solid"
+description: "Sık Sorulan Sorular"
+---
+
+**Özel anahtarlar nerede saklanıyor?**
+Özel anahtarlar, Coinbase Custody'yi kuran ekip tarafından kurulan Turnkey kullanılarak saklanmakta ve şifrelenmektedir. Özel anahtarınıza yalnızca siz erişebilirsiniz.
+
+**PVP'den nasıl para çekebilirim?**
+Özel anahtarınızı her zaman `/settings` bölümünden dışa aktarabilirsiniz.
+Ayrıca `/withdraw` komutunu kullanarak Hyperliquid L1'deki sahip olduğunuz başka bir cüzdana para çekebilirsiniz. Para çektikten sonra [**https://app.hyperliquid.xyz/portfolio**](https://app.hyperliquid.xyz/portfolio) adresine gidip para çektiğiniz cüzdanı bağlayabilirsiniz. Ardından, Hyperliquid arayüzünü kullanarak USDC'yi Hyperliquid L1'den Arbitrum'a çekebilirsiniz.
+
+**Mevcut Hyperliquid hesabımı PVP'ye nasıl bağlayabilirim?**`/accounts` komutunu kullanın, ardından "Add New Hyperliquid Account"a basarak mevcut Hyperliquid hesabınızı bağlayabilirsiniz. Daha sonra cüzdan adresinizi girmeniz ve hesabınızı doğrulamak için kullanacağımız bir API anahtarı oluşturmanız istenecektir.
+
+**PVP işlemlerden hangi ücretleri alıyor?**
+Vadeli işlemlerden %0.05, spot işlemlerden %0.5 ücret alınır (yalnızca satışlar - spot alımlarda ücret yoktur). Köprüleme veya likidasyon işlemlerinde ücret alınmaz.
+
+**Köprülenen fonlarım neden hala gelmedi?**
+Köprüleme işlemini başlatmak için minimum 10 USDC yatırma limiti vardır. En az 10 USDC yatırdıysanız ve henüz PVP'de almadıysanız, köprüleme işlemini başlatmak için herhangi bir komut çalıştırın.
+
+**Yanlışlıkla USDC yerine SOL / ETH / USDT / vb. gönderdim. Nasıl geri alabilirim?**
+EVM veya Solana cüzdanınıza USDC olmayan bir varlık gönderdiyseniz, EVM özel anahtarınızı (Export private key) veya Solana özel anahtarınızı (Export Solana key) dışa aktarmak için `/settings` komutunu çalıştırın. Ardından, fonlarınızı geri almak için bu anahtarı seçtiğiniz bir cüzdana aktarabilirsiniz.
+
+**İşlem tavsiyeleri var mı?**
+Likide olmayın.

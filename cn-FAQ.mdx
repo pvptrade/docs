@@ -1,0 +1,28 @@
+---
+title: 'FAQ'
+icon: "block-question"
+iconType: "solid"
+description: "常见问题"
+---
+
+**私钥存储在哪里？**
+私钥使用 AWS Key Management Service 加密存储。在 2025 年第一季度，我们将迁移到 Turnkey（由创建 Coinbase Custody 的团队创立）。迁移完成后，只有您能访问自己的私钥。
+
+**如何从 PVP 提取资金？**
+您随时可以在 `/settings` 中导出私钥。
+您也可以使用 `/withdraw` 命令将资金提取到您在 Hyperliquid L1 上拥有的另一个钱包。提取后，您可以访问 [**https://app.hyperliquid.xyz/portfolio**](https://app.hyperliquid.xyz/portfolio) 并连接您提取到的钱包。然后，您可以使用 Hyperliquid 界面将 USDC 从 Hyperliquid L1 提取到 Arbitrum。
+
+**如何将现有的 Hyperliquid 账户连接到 PVP？**
+使用 `/accounts` 命令，然后点击"Add New Hyperliquid Account"添加您现有的 Hyperliquid 账户。系统会提示您输入钱包地址并生成 API 密钥，我们将用它来验证您的账户。
+
+**PVP 收取哪些交易费用？**
+永续合约交易收取 0.05% 的费用，现货交易收取 0.5% 的费用（仅限卖出 - 现货买入不收费）。跨链和清算不收取费用。
+
+**为什么我的跨链资金还没到账？**
+启动跨链过程需要最低存款额度为 10 USDC。如果您已存入至少 10 USDC 但尚未在 PVP 上收到，请执行任意命令来启动跨链过程。
+
+**我不小心将 SOL / ETH / USDT 等代币而不是 USDC 发送到我的钱包。如何找回？**
+如果您向 EVM 或 Solana 钱包发送了非 USDC 资产，请运行 `/settings` 导出您的 EVM 私钥（Export private key）或 Solana 私钥（Export Solana key）。然后，您可以将其导入到您选择的钱包中以找回资金。
+
+**有什么交易建议吗？**
+不要爆仓。
