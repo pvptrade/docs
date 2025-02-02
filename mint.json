@@ -32,114 +32,69 @@
     {
       "group": "Documentation",
       "pages": [
-        {"name": "quickstart",
-        "file" : "en-quickstart"},
-        {"name": "Commands",
-        "file" : "en-commands"},
-        {"name": "Points",
-        "file" : "en-points"},
-        {"name": "FAQ",
-        "file" : "en-faq"}
-      ],
-      "version": "en"
+        {
+          "group": "English",
+          "pages": ["en-quickstart", "en-commands", "en-points", "en-faq"]
+        }
+      ]
     },
     {
       "group": "PVP 文档",
       "pages": [
-        {"name":"开始使用",
-         "file":"cn-quickstart"},
-        {"name":"命令",
-         "file":"cn-commands"},
-        {"name":"积分",
-         "file":"cn-points"},
-        {"name":"FAQ",
-         "file":"cn-faq"}
-      ],
-      "version": "cn"
+        {
+          "group": "Chinese",
+          "pages": ["cn-quickstart", "cn-commands", "cn-points", "cn-faq"]
+        }
+      ]
     },
     {
       "group": "jp-Documentation",
       "pages": [
-        "jp-quickstart",
-        "jp-commands",
-        "jp-points",
-        "jp-faq"
-      ],
-      "version": "jp"
+        {
+          "group": "Japanese",
+          "pages": ["jp-quickstart", "jp-commands", "jp-points", "jp-faq"]
+        }
+      ]
     },
     {
       "group": "kr-Documentation",
       "pages": [
-        "kr-quickstart",
-        "kr-commands",
-        "kr-points",
-        "kr-faq"
-      ],
-      "version": "kr"
+        {
+          "group": "Korean",
+          "pages": ["kr-quickstart", "kr-commands", "kr-points", "kr-faq"]
+        }
+      ]
     },
     {
       "group": "ru-Documentation",
       "pages": [
-        "ru-quickstart",
-        "ru-commands",
-        "ru-points",
-        "ru-faq"
-      ],
-      "version": "ru"
+        {
+          "group": "Russian",
+          "pages": ["ru-quickstart", "ru-commands", "ru-points", "ru-faq"]
+        }
+      ]
     },
     {
       "group": "tr-Documentation",
       "pages": [
-        "tr-quickstart",
-        "tr-commands",
-        "tr-points",
-        "tr-faq"
-      ],
-      "version": "tr"
-    }, 
+        {
+          "group": "Turkish",
+          "pages": ["tr-quickstart", "tr-commands", "tr-points", "tr-faq"]
+        }
+      ]
+    },
     {
       "group": "es-Documentation",
       "pages": [
-        "es-quickstart",
-        "es-commands",
-        "es-points",
-        "es-faq"
-      ],
-      "version": "es"
-    }  
+        {
+          "group": "Spanish",
+          "pages": ["es-quickstart", "es-commands", "es-points", "es-faq"]
+        }
+      ]
+    }
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
   },
-  "versions": [
-  {
-    "name": "en",
-    "locale": "en",
-    "default": true
-  },
-  {
-    "name": "cn",
-    "locale": "zh-cn"
-  },
-  {
-    "name": "jp",
-    "locale": "jp"
-  },
-  {
-    "name": "kr",
-    "locale": "kr"
-  },
-  {
-    "name": "ru",
-    "locale": "ru"
-  },
-  {
-    "name": "tr",
-    "locale": "tr"
-  },
-  {
-    "name": "es",
-    "locale": "es"
-  }
-  ]
+  "versions": ["en", "cn", "jp", "es", "fr", "pt", "de"]
 }
