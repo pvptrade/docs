@@ -29,69 +29,7 @@
   "tabs": [],
   "anchors": [],
   "navigation": [
-    {
-      "group": "Documentation",
-      "pages": [
-        {
-          "group": "English",
-          "pages": ["en-quickstart", "en-commands", "en-points", "en-faq"]
-        }
-      ]
-    },
-    {
-      "group": "PVP 文档",
-      "pages": [
-        {
-          "group": "Chinese",
-          "pages": ["cn-quickstart", "cn-commands", "cn-points", "cn-faq"]
-        }
-      ]
-    },
-    {
-      "group": "jp-Documentation",
-      "pages": [
-        {
-          "group": "Japanese",
-          "pages": ["jp-quickstart", "jp-commands", "jp-points", "jp-faq"]
-        }
-      ]
-    },
-    {
-      "group": "kr-Documentation",
-      "pages": [
-        {
-          "group": "Korean",
-          "pages": ["kr-quickstart", "kr-commands", "kr-points", "kr-faq"]
-        }
-      ]
-    },
-    {
-      "group": "ru-Documentation",
-      "pages": [
-        {
-          "group": "Russian",
-          "pages": ["ru-quickstart", "ru-commands", "ru-points", "ru-faq"]
-        }
-      ]
-    },
-    {
-      "group": "tr-Documentation",
-      "pages": [
-        {
-          "group": "Turkish",
-          "pages": ["tr-quickstart", "tr-commands", "tr-points", "tr-faq"]
-        }
-      ]
-    },
-    {
-      "group": "es-Documentation",
-      "pages": [
-        {
-          "group": "Spanish",
-          "pages": ["es-quickstart", "es-commands", "es-points", "es-faq"]
-        }
-      ]
-    }
+    "en-quickstart", "en-commands", "en-points", "en-faq"
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
