@@ -29,10 +29,13 @@
   "tabs": [],
   "anchors": [],
   "navigation": [
-    "en-quickstart", "en-commands", "en-points", "en-faq"
+    {
+      "group": "Documentation",
+      "pages":  ["en-quickstart", "en-commands", "en-points", "en-faq"]
+    }
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
   },
-  "versions": ["en", "cn", "jp", "es", "fr", "pt", "de"]
+  "versions": ["en"]
 }
