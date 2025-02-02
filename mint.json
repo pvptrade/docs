@@ -26,10 +26,6 @@
       "to": "#ffffff"
     }
   },
-  "topbarCtaButton": {
-    "name": "Use pvp.trade",
-    "url": "https://t.me/pvptrade_bot"
-  },
   "tabs": [],
   "anchors": [],
   "navigation": [
