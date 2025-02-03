@@ -33,7 +33,7 @@
       "default": true,
       "locale": "en"},
     {"name":"chinese",
-    "locale":"cn"},
+    "locale":"cn"}],
   "navigation": [
     {
       "group": "Documentation",
