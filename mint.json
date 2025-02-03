@@ -33,10 +33,6 @@
       "group": "Documentation",
       "pages":  ["en-quickstart", "en-commands", "en-points", "en-faq"]
     },
-    {
-      "group": "cn-Documentation",
-      "pages":  ["cn-quickstart", "cn-commands", "cn-points", "cn-faq"]
-    }
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
