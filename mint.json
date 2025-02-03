@@ -34,7 +34,7 @@
       "pages":  ["en-quickstart", "en-commands", "en-points", "en-faq"]
     },
     {
-      "group": "Documentation",
+      "group": "cn-Documentation",
       "pages":  ["cn-quickstart", "cn-commands", "cn-points", "cn-faq"]
     }
   ],
