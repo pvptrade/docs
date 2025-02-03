@@ -27,13 +27,18 @@
     }
   },
   "tabs": [],
+  
   "anchors": [],
-    "versions": [
-    {"name":"english",
+  "versions": [{ 
+      "name":"english",
       "default": true,
-      "locale": "en"},
-    {"name":"chinese",
-    "locale":"cn"}],
+      "locale": "en"
+      },
+      {"name":"chinese",
+       "locale":"cn"
+      }
+  ],
+  
   "navigation": [
     {
       "group": "Documentation",
