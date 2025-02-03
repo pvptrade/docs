@@ -28,12 +28,18 @@
   },
   "tabs": [],
   "anchors": [],
+    "versions": [
+    {"name":"english",
+      "default": true,
+      "locale": "en"},
+    {"name":"chinese",
+    "locale":"cn"},
   "navigation": [
     {
       "group": "Documentation",
       "pages":  ["en-quickstart", "en-commands", "en-points", "en-faq"],
       "version": "english"
-    }
+    },
     {
       "group": "Documentation",
       "pages":  ["cn-quickstart", "cn-commands", "cn-points", "cn-faq"],
@@ -42,11 +48,5 @@
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
-  },
-  "versions": [
-    {"name":"english",
-      "default": true,
-      "locale": "en"},
-    {"name":"chinese",
-    "locale":"cn"}]
+  }]
 }
