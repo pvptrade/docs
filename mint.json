@@ -32,10 +32,19 @@
     {
       "group": "Documentation",
       "pages":  ["en-quickstart", "en-commands", "en-points", "en-faq"]
+    },
+    {
+      "group": "Documentation",
+      "pages":  ["cn-quickstart", "cn-commands", "cn-points", "cn-faq"]
     }
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
   },
-  "versions": ["en"]
+  "versions": [
+    {"name":"english",
+      "default": true,
+      "locale": "en"},
+    {"name":"chinese",
+    "locale":"cn"}]
 }
