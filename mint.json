@@ -39,6 +39,9 @@
       },
       {"name":"japanese",
        "locale":"jp"
+      },
+      {"name":"russian",
+       "locale":"ru"
       }
   ],
   
@@ -57,6 +60,11 @@
       "group": "Documentation",
       "pages":  ["jp-quickstart", "jp-commands", "jp-points", "jp-faq"],
       "version": "japanese"
+    }
+    {
+      "group": "Documentation",
+      "pages":  ["ru-quickstart", "ru-commands", "ru-points", "ru-faq"],
+      "version": "russian"
     }
   ],
   "footerSocials": {
