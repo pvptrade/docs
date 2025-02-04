@@ -1,0 +1,27 @@
+---
+title: 'FAQ'
+icon: "block-question"
+iconType: "solid"
+description: "Preguntas Frecuentes"
+---
+**¿Dónde se almacenan las claves privadas?**
+Las claves privadas se almacenan y cifran mediante Turnkey, fundada por el equipo que creó Coinbase Custody. Solo usted tiene acceso a su clave privada.
+
+**¿Cómo retiro fondos de PVP?**
+Siempre puedes exportar tu clave privada en `/settings`.
+También puedes retirar a otra billetera que poseas en el L1 de Hyperliquid usando el comando `/withdraw`. Una vez retirado, puedes ir a [**https://app.hyperliquid.xyz/portfolio**](https://app.hyperliquid.xyz/portfolio) y conectarte con la billetera a la que retiraste. Luego, puedes retirar USDC desde el L1 de Hyperliquid a Arbitrum usando la interfaz de Hyperliquid.
+
+**¿Cómo puedo conectar mi cuenta existente de Hyperliquid a PVP?**
+Usa el comando `/accounts`, y luego puedes vincular tu cuenta existente de Hyperliquid presionando "Add New Hyperliquid Account". Después se te pedirá que ingreses la dirección de tu billetera y generes una clave API, que usaremos para autenticar tu cuenta.
+
+**¿Qué comisiones cobra PVP en las operaciones?**
+Hay una comisión del 0.05% en operaciones de futuros y una comisión del 0.5% en operaciones spot (solo en ventas - no hay comisiones en compras spot). No hay comisión en el bridging o liquidaciones.
+
+**¿Por qué mis fondos transferidos aún no han llegado?**
+Hay un límite mínimo de depósito de 10 USDC para iniciar el proceso de bridging. Si has depositado al menos 10 USDC y aún no los has recibido en PVP, ejecuta cualquier comando para iniciar el proceso de bridging.
+
+**Envié accidentalmente SOL / ETH / USDT / etc. a mi billetera en lugar de USDC. ¿Cómo puedo recuperarlo?**
+Si has enviado un activo que no es USDC a tu billetera EVM o Solana, ejecuta `/settings` para exportar tu clave privada EVM (Export private key) o tu clave Solana (Export Solana key). Luego, puedes importarla a una billetera de tu elección para recuperar tus fondos.
+
+**¿Algún consejo de trading?**
+No te dejes liquidar.
