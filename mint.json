@@ -60,7 +60,7 @@
       "group": "Documentation",
       "pages":  ["jp-quickstart", "jp-commands", "jp-points", "jp-faq"],
       "version": "japanese"
-    }
+    },
     {
       "group": "Documentation",
       "pages":  ["es-quickstart", "es-commands", "es-points", "es-faq"],
