@@ -40,8 +40,8 @@
       {"name":"japanese",
        "locale":"jp"
       },
-      {"name":"russian",
-       "locale":"ru"
+      {"name":"spanish",
+       "locale":"es"
       }
   ],
   
@@ -63,8 +63,8 @@
     }
     {
       "group": "Documentation",
-      "pages":  ["ru-quickstart", "ru-commands", "ru-points", "ru-faq"],
-      "version": "russian"
+      "pages":  ["es-quickstart", "es-commands", "es-points", "es-faq"],
+      "version": "spanish"
     }
   ],
   "footerSocials": {
