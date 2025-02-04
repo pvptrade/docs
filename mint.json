@@ -36,6 +36,9 @@
       },
       {"name":"chinese",
        "locale":"cn"
+      },
+      {"name":"japanese",
+       "locale":"jp"
       }
   ],
   
@@ -49,9 +52,14 @@
       "group": "Documentation",
       "pages":  ["cn-quickstart", "cn-commands", "cn-points", "cn-faq"],
       "version": "chinese"
+    }, 
+    {
+      "group": "Documentation",
+      "pages":  ["jp-quickstart", "jp-commands", "jp-points", "jp-faq"],
+      "version": "japanese"
     }
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
-  }
+  }]
 }
