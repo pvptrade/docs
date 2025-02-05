@@ -4,21 +4,21 @@ icon: "circle-info"
 iconType: "solid"
 description: "Documentación para todos los comandos de PVP"
 ---
-### **/start**
+### '/start'
 
 Ver tus saldos de billetera, direcciones y una breve guía de inicio.
 
-### **/markets**
+### '/markets'
 
 Ver todos los mercados de perp operables. También puedes navegar por los mercados con las flechas izquierda y derecha.
 
-### **/long y /short**
+### '/long y /short'
 
 Abrir posición larga o corta en un token. Cuando ingreses '/long' o '/short', se te pedirá el ticker, el apalancamiento y el margen que deseas utilizar.
 
-También puedes usar la siguiente sintaxis abreviada: **`/long <ticker> <apalancamiento> <margen>`**.
+También puedes usar la siguiente sintaxis abreviada: '/long [ticker] [apalancamiento] [margen].
 
-### **/close <ticker> <porcentaje>**
+### '/close [ticker] [porcentaje]'
 
 Cerrar una posición abierta. Cuando ingreses '/close', se te pedirá que ingreses el ticker que deseas cerrar y luego el porcentaje del token que quieres cerrar.
 
@@ -27,47 +27,47 @@ También puedes usar la siguiente sintaxis abreviada:
 - **`/close BTC 100%`** — cierra el 100% de tu posición en BTC.
 - **`/close all 30%`** — cierra el 30% de todas las posiciones abiertas.
 
-### **/positions**
+### '/positions'
 
-Ver tus posiciones abiertas. También puedes usar **`/positions @username`** para ver las posiciones de otra persona en el chat grupal.
+Ver tus posiciones abiertas. También puedes usar **'/positions @username'** para ver las posiciones de otra persona en el chat grupal.
 
-### **/leaderboards**
+### '/leaderboards'
 
 Ver las tablas de clasificación en el chat grupal actual. Solo se muestran usuarios con más de $10 en capital o PnL.
 
 También puedes especificar uno de los siguientes períodos de tiempo: **`week`** (para la semana actual), **`1d`** (predeterminado), **`7d`**, **`30d`**, o **`all`**.
 
-### **/chart o /c**
+### '/chart o /c'
 
 Usa por ejemplo **`/chart BTC`** para mostrar el gráfico de 1h de BTC. Los gráficos también muestran las ejecuciones de los miembros del grupo.
 
 También puedes especificar uno de los siguientes períodos de tiempo: **`1m`**, **`5m`**, **`15m`**, **`1h`**, **`4h`**, **`1d`**.
 
-### **/pnl**
+### '/pnl'
 
 Ver tu gráfico de PnL. Puedes usar **`/pnl @username`** para ver el gráfico de PnL de otra persona en el chat grupal.
 
 También puedes especificar uno de los siguientes períodos de tiempo: **`1d`**, **`7d`**, **`30d`**, **`all`**.
 
-### **/balances**
+### '/balances'
 
 Ver tus saldos spot. No puedes usar este comando para otros usuarios.
 
-### **/clan y /clankick**
+### '/clan y /clankick'
 
 Gestionar tu clan actual y expulsar miembros de tu clan (si eres propietario del clan)
 
-### **/clanleaderboards**
+### '/clanleaderboards'
 
 Ver los 5 mejores y 5 peores clanes por PnL de la semana actual (comienza y termina cada sábado), así como tu posición.
 
 No puedes especificar otros períodos de tiempo para este comando.
 
-### **/buy y /sell**
+### '/buy y /sell'
 
 Comprar y vender tokens spot. Debes tener USDC en tu cuenta spot para comprar tokens spot. Puedes transferir USDC de tu cuenta de perps a la cuenta spot usando el comando **`/transfer`** si estás usando una billetera gestionada por PVP.
 
-### **/pair**
+### '/pair'
 
 Cómo abrir una operación en par:
 
@@ -77,7 +77,7 @@ Ejemplo: Para abrir long en BTC con apalancamiento 10x y $1,000 de margen mientr
 
 **`/pair btc 10x 1000 eth 10x 2000`**
 
-### **/limit**
+### '/limit'
 
 Cómo colocar una orden límite:
 
@@ -91,72 +91,72 @@ Ejemplo: para colocar una Orden Límite Long para HYPE con apalancamiento 3x y $
 
 **`/limit long hype 3x 15 1000`**
 
-### **/stoploss, /takeprofit, y /stoplimit**
+### '/stoploss, /takeprofit, y /stoplimit'
 
 Usa estos comandos para establecer stop loss, take profit, o stop limit en tus posiciones.
 
-### **/presets**
+### '/presets'
 
 Los presets te permiten ejecutar operaciones para un activo con apalancamiento predefinido y parámetros de TP/SL con un solo clic. Para crear o ver presets existentes usa '/presets'. Para ejecutar una orden preset, invócala así: **`/preset <índice>`**.
 
-### **/invite**
+### '/invite'
 
 Obtén tu código de referido y el número de personas que has referido.
 
-### **/price**
+### '/price'
 
 Usa por ejemplo **`/price BTC`** para obtener el precio actual de BTC.
 
-### **/hype**
+### '/hype'
 
 Obtén el precio actual de HYPE.
 
-### **/alert**
+### '/alert'
 
 Usa por ejemplo **`/alert HYPE $20`** para recibir una alerta de precio cuando HYPE alcance $20.
 
-### **/points**
+### '/points'
 
 Ver cuántos puntos has ganado. Consulta la sección Puntos para más detalles.
 
-### **/track, /untrack y /watchlist**
+### '/track, /untrack y /watchlist'
 
 Usa estos comandos para gestionar el seguimiento de operaciones de una dirección de billetera en Hyperliquid. Ciertas direcciones, como el HLP, no pueden ser rastreadas.
 
-### **/wallet**
+### '/wallet'
 
 Ver tus direcciones de billetera y saldos.
 
-### **/send**
+### '/send'
 
 Usa **`/send @username $10`** para enviar USDC a alguien en tu chat grupal. Debes tener una billetera gestionada por PVP para hacerlo, y el mínimo que puedes enviar es 5 USDC.
 
 También puedes usar los siguientes alias: **`/heal`**, **`/tip`**, **`/revive`**,
 
-### **/withdraw**
+### '/withdraw'
 
 Retirar a otra dirección en el L1 de Hyperliquid. Debes tener una billetera gestionada por PVP para retirar fondos.
 
-### **/transfer**
+### '/transfer'
 
 Transferir USDC entre tus cuentas spot y perps. Debes tener una billetera gestionada por PVP para transferir.
 
-### **/accounts**
+### '/accounts'
 
 Gestionar tus cuentas (billeteras). Puedes añadir una nueva cuenta (ya sea gestionada por PVP o mediante clave API) y establecer tu cuenta principal, que es la cuenta que se usa en todos tus chats grupales.
 
-### **/taunt**
+### '/taunt'
 
 Provocar a otro clan con un mensaje. Se te pedirá que ingreses su nombre de clan y una provocación, que puede ser texto o un sticker.
 
-### **/orders**
+### '/orders'
 
 Ver tus órdenes abiertas y cancelarlas.
 
-### **/stats**
+### '/stats'
 
 Ver tus estadísticas de trading como volumen, operaciones realizadas y número de personas invitadas.
 
-### **/settings**
+### '/settings'
 
 Abrir el menú de configuración, donde puedes gestionar tus ajustes del bot, gestionar tu clan, exportar tus claves privadas o contactar con soporte.
