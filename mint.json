@@ -42,6 +42,9 @@
       },
       {"name":"spanish",
        "locale":"es"
+      },
+      {"name":"russian",
+       "locale":"ru"
       }
   ],
   
@@ -65,7 +68,12 @@
       "group": "Documentation",
       "pages":  ["es-quickstart", "es-commands", "es-points", "es-faq"],
       "version": "spanish"
-    }
+    },
+    {
+      "group": "Documentation",
+      "pages":  ["ru-quickstart", "ru-commands", "ru-points", "ru-faq"],
+      "version": "russian"
+    }  
   ],
   "footerSocials": {
     "x": "https://x.com/pvp_dot_trade"
