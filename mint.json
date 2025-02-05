@@ -53,17 +53,17 @@
     },
     {
       "group": "Documentation",
-      "pages":  ["cn-quickstart", "cn-commands", "cn-points", "cn-faq"],
+      "pages":  ["cn-quickstart", "cn-commands", "cn-points", "cn-faq", "cn-languages"],
       "version": "chinese"
     }, 
     {
       "group": "Documentation",
-      "pages":  ["jp-quickstart", "jp-commands", "jp-points", "jp-faq"],
+      "pages":  ["jp-quickstart", "jp-commands", "jp-points", "jp-faq","jp-languages"],
       "version": "japanese"
     },
     {
       "group": "Documentation",
-      "pages":  ["es-quickstart", "es-commands", "es-points", "es-faq"],
+      "pages":  ["es-quickstart", "es-commands", "es-points", "es-faq", "es-languages"],
       "version": "spanish"
     }
   ],
