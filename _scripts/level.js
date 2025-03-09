@@ -1,3 +1,4 @@
+console.log("hello")
 if (window.location.pathname === '/en-levels') {
   const tooltipContent = {
   '5': `<div><img src="/images/5.jpg"></div>`,
