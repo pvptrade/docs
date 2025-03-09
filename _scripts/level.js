@@ -1,7 +1,7 @@
 console.log("hello")
 if (window.location.pathname === '/en-levels') {
   const tooltipContent = {
-  '5': `<div><img src="/images/5.jpg"></div>`,
+  '5': `<div><img src="https://mintlify.s3.us-west-1.amazonaws.com/pvp/images/5.jpg"></div>`,
   '8': `<div><img src="/images/8.jpg"></div>`,
   '11': `<div><img src="/images/11.jpg"></div>`,
   '14': `<div><img src="/images/14.jpg"></div>`,
