@@ -35,8 +35,6 @@ const tooltipContent = {
 '99': `<div><p>Engraved PVP Ring in 925 sterling silver. Preview coming soon.</p></div>`,
 };
 
-const tooltipContent = { /* your tooltipContent object here */ };
-
 // Function to initialize tooltips on .unlock elements
 function initializeTooltips() {
   if (typeof window.tippy === 'undefined') {
