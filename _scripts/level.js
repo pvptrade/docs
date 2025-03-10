@@ -35,27 +35,32 @@ const tooltipContent = {
 '99': `<div><p>Engraved PVP Ring in 925 sterling silver. Preview coming soon.</p></div>`,
 };
 
+const tooltipContent = { /* your tooltipContent object here */ };
+
 // Function to initialize tooltips on .unlock elements
 function initializeTooltips() {
+  if (typeof window.tippy === 'undefined') {
+    console.log('Tippy not loaded yet, retrying...');
+    setTimeout(initializeTooltips, 200); // Retry after 200ms
+    return;
+  }
+
   const unlockElements = document.querySelectorAll('.unlock:not(.tippy-initialized)');
 
-  if (unlockElements.length > 0) {
-    unlockElements.forEach((el) => {
-      // Ensure Tippy is only initialized once per element
-      tippy(el, {
-        content: tooltipContent[el.getAttribute('data-tooltip')] || '<p>No details available.</p>',
-        allowHTML: true,
-        placement: 'top-start',
-        trigger: 'mouseenter',
-        animation: 'shift-away-subtle',
-        onClickOutside: false,
-        hideOnClick: false,
-        inertia: true,
-        arrow: true,
-      });
-      el.classList.add('tippy-initialized');
+  unlockElements.forEach((el) => {
+    tippy(el, {
+      content: tooltipContent[el.getAttribute('data-tooltip')] || '<p>No details available.</p>',
+      allowHTML: true,
+      placement: 'top-start',
+      trigger: 'mouseenter',
+      animation: 'shift-away-subtle',
+      onClickOutside: false,
+      hideOnClick: false,
+      inertia: true,
+      arrow: true,
     });
-  }
+    el.classList.add('tippy-initialized');
+  });
 }
 
 // Debounce function to limit MutationObserver calls
@@ -68,12 +73,10 @@ function debounce(func, wait) {
 }
 
 // Run initially when DOM is fully loaded
-document.addEventListener('DOMContentLoaded', initializeTooltips);
+window.addEventListener('DOMContentLoaded', initializeTooltips);
 
 // Watch for DOM changes with debounced initialization
-const observer = new MutationObserver(debounce(() => {
-  initializeTooltips();
-}, 100)); // Adjust delay as needed
+const observer = new MutationObserver(debounce(initializeTooltips, 100));
 
 observer.observe(document.body, {
   childList: true,
