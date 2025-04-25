@@ -5,7 +5,7 @@ iconType: "solid"
 description: "Fees and Discounts"
 ---
 
-The PVP fee structure consists of two main components.
+The PVP fee structure consists of **three components**.
 
 ## Permanent Level-Based Discounts
 
@@ -64,10 +64,34 @@ In addition to your level-based discount, trading actively within the last 30 da
   </table>
 </div>
 
-## Example: Maximum Possible Discount
+## Effective Leverage-Based Discount (Per-Trade)
 
-A trader at Level 98 who also reaches the highest 30-day volume tier can achieve a maximum effective perpetuals trading fee of as low as **2 bps** or **0.02%**.
+Every individual trade also qualifies for a dynamic discount determined by its **effective leverage** (post-fill notional value ÷ account equity). The discount grows linearly from **0 bps at 0× leverage** to a maximum of **4 bps at 40× leverage**. Leverage above 40× does not increase the discount.
 
-## Spot fees
+<div class="leverage-table-container">
+  <table class="leverage-table">
+    <thead>
+      <tr>
+        <th>Effective Leverage</th>
+        <th>Additional Discount (bps)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>0×</td><td>0</td></tr>
+      <tr><td>10×</td><td>1</td></tr>
+      <tr><td>20×</td><td>2</td></tr>
+      <tr><td>30×</td><td>3</td></tr>
+      <tr><td>40× +</td><td>4 (max)</td></tr>
+    </tbody>
+  </table>
+</div>
 
-Spot fees only apply on sells, and fees for trading spot are the same as fees for trading perps multiplied by 5. For example, the trader in the example above would have a fee of **0.1%** for selling spot tokens.
+*The leverage discount applies on both the opening and closing side of a position, based on the effective leverage **immediately after** each fill. Total fees can never be negative; any discount that would reduce the fee below 0 bps is capped at 0 bps.*
+
+## Example: Stacking All Discounts
+
+A trader at **Level 98** who also qualifies for the top 30-day volume tier starts with a base fee of **3.5 bps**, reduced by **1.5 bps** for activity to **2 bps**. Entering or exiting a **40×** leveraged position grants the full **4 bps** leverage discount, bringing the effective fee for that trade down to **0 bps** (fee-free). Any lower leverage receives the proportionate discount.
+
+## Spot Fees
+
+Spot fees only apply on sells. Your spot sell fee equals your effective perp fee **multiplied by 5**. Using the example above, the same trader would pay **0.10 %** when selling spot tokens (5 × 0.02 %).
