@@ -66,7 +66,7 @@ In addition to your level-based discount, trading actively within the last 30 da
 
 ## Effective Leverage-Based Discount (Per-Trade)
 
-Every individual trade also qualifies for a dynamic discount determined by its **effective leverage** (post-fill notional value ÷ account equity). The discount grows linearly from **0 bps at 0× leverage** to a maximum of **4 bps at 40× leverage**. Leverage above 40× does not increase the discount.
+Every individual trade also qualifies for a dynamic discount determined by its **effective leverage** (notional value ÷ account equity). The discount grows linearly to a maximum of **4 bps at 40× leverage**.
 
 <div class="leverage-table-container">
   <table class="leverage-table">
@@ -86,7 +86,7 @@ Every individual trade also qualifies for a dynamic discount determined by its *
   </table>
 </div>
 
-*The leverage discount applies on both the opening and closing side of a position, based on the effective leverage **immediately after** each fill. Total fees can never be negative; any discount that would reduce the fee below 0 bps is capped at 0 bps.*
+*The leverage discount applies on both the opening and closing side of a position. Total fees can never be negative; any discount that would reduce the fee below 0 bps is capped at 0 bps.*
 
 ## Example: Stacking All Discounts
 
